@@ -48,7 +48,7 @@ wavelet = 'dog'
 drop = 0.3
 
 # Define model
-class CNN2D(nn.Module):
+class ConvBiGRUKAN(nn.Module):
     def __init__(self, window_size, dim=x_test_combined.shape[2]):
         super(CNN2D, self).__init__()
         self.conv1 = nn.Conv2d(1, 16, kernel_size=(5,5), padding=0, bias=False)
@@ -86,7 +86,7 @@ class CNN2D(nn.Module):
 test_loader = torch.utils.data.DataLoader(torch.utils.data.TensorDataset(x_test_torch, y_test_torch), batch_size=1024, shuffle=False)
 
 # Evaluate model
-model = CNN2D(9).to(device)
+model = ConvBiGRUKAN(9).to(device)
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 print("Model successfully initialized!")
 if sys.argv[1].upper() == 'ST':
