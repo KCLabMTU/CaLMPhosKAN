@@ -1,5 +1,6 @@
 import sys
 import math
+import pyfiglet
 import pandas as pd
 import numpy as np
 import torch
@@ -10,6 +11,10 @@ from sklearn.metrics import (matthews_corrcoef, f1_score, precision_score, recal
 from torch.cuda.amp import autocast, GradScaler
 from KAN import KANLinear
 from tabulate import tabulate
+
+text = "CaLMPhosKAN"
+logo = pyfiglet.figlet_format(text)
+print(logo)
 
 # Check proper input
 if len(sys.argv) != 2:
@@ -109,8 +114,9 @@ y_test_np = np.array(y_test)
 mcc = matthews_corrcoef(y_test_np, y_pred)
 precision = precision_score(y_test_np, y_pred)
 recall = recall_score(y_test_np, y_pred)
-f1 = f1_score(y_test_np, y_pred, average='weighted')
+f1 = f1_score(y_test_np, y_pred)
+f1weighted = f1_score(y_test_np, y_pred, average='weighted')
 aupr = average_precision_score(y_test_np, y_pred_prob)
 print("Evaluation complete! Printing Results...\n")
-table = [['MCC', 'Precision', 'Recall', 'F1weighted', 'AUPR'], [('%.2f' % round(mcc,2)), ('%.2f' % round(precision,2)), ('%.2f' % round(recall,2)), ('%.2f' % round(f1,2)), ('%.2f' % round(aupr,2))]]
-print(tabulate(table)) 
+table = [['MCC', 'Precision', 'Recall', 'F1', 'F1weighted', 'AUPR'], [('%.2f' % round(mcc,2)), ('%.2f' % round(precisio$
+print(tabulate(table))
