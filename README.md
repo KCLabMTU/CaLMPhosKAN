@@ -9,6 +9,18 @@
   Predict General Phosphorylation Modification in Proteins using the Fusion of Codon-Aware Embeddings and Amino Acid-Aware Embeddings with Wavelet-based Kolmogorov–Arnold Network
 </p>
 
+<p align="center">
+<img src="images/example_run.png"/> 
+</p>
+
+## About
+
+## Architecture
+
+<p align="center">
+<img src="images/Calmphoskan_architecture.png"/> 
+</p>
+
 ## Independent Test Set Evaluation
 ### Install Libraries
 
