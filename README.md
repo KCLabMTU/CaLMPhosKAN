@@ -6,7 +6,7 @@
 
 
 <p align="center">
-  Predict General Phosphorylation Modification in Proteins using the Fusion of Codon-Aware Embeddings and Amino Acid-Aware Embeddings with Wavelet-based Kolmogorov–Arnold Network
+  Predict General Phosphorylation Modification in Proteins Using the Fusion of Codon-Aware Embeddings and Amino Acid-Aware Embeddings with Wavelet-based Kolmogorov–Arnold Network
 </p>
 
 <p align="center">
@@ -14,6 +14,19 @@
 </p>
 
 ## About
+
+### Motivation
+
+#### Codon-level Embeddings
+The recent introduction of CaLM, a protein language model (pLM) trained on protein-coding DNA sequences, allows for extraction and use of information out of the codon space of proteins. This space has provided usefull information that allows CaLM to outperform amino acid-based pLMs in tasks such as melting point prediction, solubility prediction, subcellular localization classification, and function prediction. However, this codon-level information has, until now, gone unused for the task of post translational modification (PLM) prediction. 
+
+#### Wavelet Kolmogorov-Arnold Network (Wav-KAN)
+Traditionally, post translational modification (PLM) prediction models have relied on multi-layer perceptrons (MLPs) as the prediction engine to output the classification of a residue. These consist of multiple layers of neurons or nodes which use fixed, non-linear activation functions in order to learn complex relationships in the input data. Inputs to each neuron/node also utilize trainable weights in order to strengthen connections which are important to prediction. Kolmogorov-Arnold networks (KANs) modify this approach by using trainable, non-linear activation functions along the edges of the network instead of at the nodes. The nodes then simply sum the inputs to produce an output. The paper which proposes KANs can be found here: [Kolmogorov-Arnold Network Paper](https://arxiv.org/abs/2404.19756) and the accompanying Github repository here: [pyKAN Github](https://github.com/KindXiaoming/pykan).
+
+Furthermore, KANs can be modified to include wavelet functions. Wavelets allow efficient capturing of both low and high-frequency components of the data. When wavelets are included into a KAN, the peformance, efficiency, and robustness of the model improves. The in-depth and original proposition of a wavelet-KAN (Wav-KAN) can be found here: [Wavelet Kolmogorov-Arnold Network Paper](https://arxiv.org/abs/2405.12832) as well as the Github repository which implements it here: [Wav-KAN Github](https://github.com/zavareh1/Wav-KAN).
+
+### Overview
+CaLMPhosKAN is a general phosphorylation PTM predictor which leverages multiple new techniques in the field in order to achieve high performance. Codon-aware embeddings are combined with amino acid-aware embeddings to create a representation of the proteins sequence with high amounts of valuable information. Feature extraction is performed using a 2D-convolutional layer followed by a Bidirectional Gated Recurrent Unit (BiGRU) in order to find spacial and sequential relationships between residues within a windowed frame. These features can then be learned by the Wav-KAN module and produce the final prediction. Using this process, CaLMPhosKAN outperforms other models in phosphorylation prediction with multiple new techniques.
 
 ## Architecture
 
