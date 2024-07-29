@@ -74,12 +74,12 @@ The necessary independent testing data is availiable to download here: [CaLMPhos
 |----|--------------|-------------|-------------|------------|
 |Size|6.07 GB|197 KB|1009 MB|32 KB|
 
-Once the files are downloaded, add the data folder to the same directory as the evaluation script.
+Once the files are downloaded, add the data folder to the same directory as the evaluation script inside the repository folder.
 
 ### Run Evaluation
 After the data folder is in place and the requirements are installed, evaluation can be performed with format of the command below:
 ```shell
-python evaluate.py data
+python evaluate.py dataset
 ```
 Note that 'data' must be replaced by ST or Y, signaling to the program to predict phosphorylation on either the serine & threonine (ST) dataset, or the tyrosine (Y) dataset. 
 
