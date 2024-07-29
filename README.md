@@ -34,6 +34,19 @@ CaLMPhosKAN is a general phosphorylation PTM predictor which leverages multiple 
 <img src="images/Calmphoskan_architecture.png"/> 
 </p>
 
+## Use this Repository
+To start using this repository and obtain a local copy, you may clone it or download it directly from Github.
+
+### Clone the Repository
+By using Git (must be installed on your computer), you can clone the repository directly from your terminal or command line. The command to do so is here:
+
+```shell
+git clone git@github.com:KCLabMTU/CaLMPhosKAN.git
+```
+
+### Download the Repository Directly
+If you choose not to use Git, you can still download the repository as a zip file by clicking the green '<>Code' dropdown box, selecting the 'Local' tab, and clicking 'Download ZIP' from the main CaLMPhosKAN page, or simply use this link: [Download main.zip](https://github.com/KCLabMTU/CaLMPhosKAN/archive/refs/heads/main.zip)
+
 ## Independent Test Set Evaluation
 ### Install Libraries
 
