@@ -97,3 +97,15 @@ python evaluate.py dataset
 ```
 Note that 'data' must be replaced by ST or Y, signaling to the program to predict phosphorylation on either the serine & threonine (ST) dataset, or the tyrosine (Y) dataset. 
 
+#### Output Examples
+The output of a successful run should look very similar to the screenshots that follow. Directly below is the example of the evaluation script which ran on the ST dataset...
+
+<p align="center">
+<img src="images/example_output_ST.png"/> 
+</p>
+
+...and below this is the example of the evaluation script which ran on the Y dataset.
+
+<p align="center">
+<img src="images/example_output_Y.png"/> 
+</p>
