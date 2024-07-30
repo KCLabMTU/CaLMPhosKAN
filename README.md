@@ -13,6 +13,20 @@
 <img src="images/example_run.png"/> 
 </p>
 
+<p align="center">
+<a href="https://pypi.org/project/tabulate/"><img alt="tabulate" src="https://img.shields.io/badge/tabulate-0.9.0-blue.svg"/></a>  
+<a href="https://pytorch.org/vision/stable/index.html"><img alt="torchvision" src="https://img.shields.io/badge/torchvision-0.18.1-red.svg"/></a>  
+<a href="https://pypi.org/project/pyfiglet/"><img alt="pyfiglet" src="https://img.shields.io/badge/pyfiglet-1.0.2-yellow.svg"/></a>
+<a href="https://www.python.org/"><img alt="python" src="https://img.shields.io/badge/Python-3.11.7-blue.svg"/></a>
+<a href="https://pytorch.org/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.3.1-orange.svg"/></a>
+<a href="https://scikit-learn.org/"><img alt="scikit_learn" src="https://img.shields.io/badge/scikit_learn-1.5.1-blue.svg"/></a>
+<a href="https://numpy.org/"><img alt="numpy" src="https://img.shields.io/badge/numpy-2.0.1-red.svg"/></a>
+<a href="https://pandas.pydata.org/"><img alt="pandas" src="https://img.shields.io/badge/pandas-2.2.2-yellow.svg"/></a>
+<a href="https://tqdm.github.io/"><img alt="tqdm" src="https://img.shields.io/badge/tqdm-4.66.4-blue.svg"/></a>
+<a href="https://github.com/KCLabMTU/CaLMPhosKAN/commits/main"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KCLabMTU/CaLMPhosKAN.svg?style=flat&color=blue"></a>
+<a href="https://github.com/KCLabMTU/CaLMPhosKAN/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/KCLabMTU/CaLMPhosKAN.svg?style=flat&color=blue"></a>
+</p>
+
 ## About
 
 ### Motivation
