@@ -55,7 +55,7 @@ drop = 0.3
 # Define model
 class ConvBiGRUKAN(nn.Module):
     def __init__(self, window_size, dim=x_test_combined.shape[2]):
-        super(CNN2D, self).__init__()
+        super(ConvBiGRUKAN, self).__init__()
         self.conv1 = nn.Conv2d(1, 16, kernel_size=(5,5), padding=0, bias=False)
         self.dropout = nn.Dropout(drop)
         conv_output_height = window_size - 4
