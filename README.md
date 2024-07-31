@@ -93,7 +93,7 @@ If you downloaded the entire 'data' folder, unzip the data folder into the same 
 > 1. Downloading the data in this way will cause only three of the four required files to be downloaded inside of a folder. 'ST_dataset.npy' is too large to be downloaded into a folder with the other files and must be added manually. You may unzip the downloaded folder with the three files to the previously described destination, then add 'ST_dataset.npy' to this folder.
 > 2. It is likely that this fourth large file will not be named exactly 'ST_dataset.npy'. Before running the evaluation script, please make sure that the data folder is named 'data' and that the files contained within are named exactly as the above table describes.
 
-If you downloaded each file independently, add each file to a folder titled 'data', and add this to the same directory as the evaluation script inside the repository folder.
+If you downloaded each file independently, add each file to a new folder titled 'data', and add this to the same directory as the evaluation script inside the repository folder.
 > <kbd>**Note:**</kbd>
 Before running the evaluation script, please make sure that the data folder is named 'data' and that the files contained within are named exactly as the above table describes.
 
