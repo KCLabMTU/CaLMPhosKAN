@@ -118,5 +118,5 @@ f1 = f1_score(y_test_np, y_pred)
 f1weighted = f1_score(y_test_np, y_pred, average='weighted')
 aupr = average_precision_score(y_test_np, y_pred_prob)
 print("Evaluation complete! Printing Results...\n")
-table = [['MCC', 'Precision', 'Recall', 'F1', 'F1weighted', 'AUPR'], [('%.2f' % round(mcc,2)), ('%.2f' % round(precisio$
+table = [['MCC', 'Precision', 'Recall', 'F1', 'F1weighted', 'AUPR'], [('%.2f' % round(mcc,2)), ('%.2f' % round(precision,2)), ('%.2f' % round(recall,2)), ('%.2f' % round(f1,2)), ('%.2f' % round(f1weighted,2)), ('%.2f' % round(aupr,2))]]
 print(tabulate(table))
