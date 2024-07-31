@@ -92,7 +92,7 @@ test_loader = torch.utils.data.DataLoader(torch.utils.data.TensorDataset(x_test_
 
 # Evaluate model
 model = ConvBiGRUKAN(9).to(device)
-model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=True))
 print("Model successfully initialized!")
 if sys.argv[1].upper() == 'ST':
     print("\nEvaluating phosphorylation prediction on serine and threonine...")
