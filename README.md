@@ -54,7 +54,11 @@ Additionally, KANs can be enhanced by incorporating wavelet functions, which all
 To start using this repository and obtain a local copy, you may clone it or download it directly from Github.
 
 ### Clone the Repository
-By using Git (must be installed on your local system), you can clone the repository directly from your terminal or command line. The command to do so is here:
+To clone this repository using Git (which must be installed on your local system), follow these steps:
+
+1. Open your terminal (or command prompt).
+
+2. Run the following command to clone the repository:
 
 ```shell
 git clone git@github.com:KCLabMTU/CaLMPhosKAN.git
