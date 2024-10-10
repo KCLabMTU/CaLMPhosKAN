@@ -50,6 +50,14 @@ Additionally, KANs can be enhanced by incorporating wavelet functions, which all
 <img src="images/Calmphoskan_architecture.png"/> 
 </p>
 
+## Build Environment 💻
+The tool was developed in the following high performance computing environment, ensuring robust and efficient functionality:
+- **RAM:** 384 GB
+- **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
+- **GPU:** NVIDIA Tesla A100 Ampere 80 GB HBM2 (6912 CUDA cores, 432 Tensor cores and bandwidth 1555GB/sec)
+- **Storage:** 2TB SK hynix PC711 NVMe SSD
+- **Operating System:** Ubuntu 20.04.6 LTS (64-bit)
+
 ## Use this Repository
 To start using this repository and obtain a local copy, you may clone it or download it directly from Github.
 
@@ -63,9 +71,19 @@ To clone this repository using Git (which must be installed on your local system
 ```shell
 git clone git@github.com:KCLabMTU/CaLMPhosKAN.git
 ```
+This will download a local copy of the repository to your machine. Make sure that you have proper access permissions if the repository is private.
 
 ### Download the Repository Directly
-If you choose not to use Git, you can still download the repository as a zip file by clicking the green '<>Code' dropdown box, selecting the 'Local' tab, and clicking 'Download ZIP' from the main CaLMPhosKAN page, or simply use this link: [Download main.zip](https://github.com/KCLabMTU/CaLMPhosKAN/archive/refs/heads/main.zip)
+
+If you prefer not to use Git, you can still download the repository as a ZIP file:
+
+1. Navigate to the repository's main page.
+2. Click the green **Code** dropdown button.
+3. Select the **Local** tab.
+4. Click **Download ZIP** to get a compressed version of the repository.
+
+Alternatively, you can directly download the ZIP file using this link: [Download main.zip](https://github.com/KCLabMTU/CaLMPhosKAN/archive/refs/heads/main.zip)
+
 
 ## Independent Test Set Evaluation
 ### Install Libraries
@@ -88,20 +106,26 @@ torch==2.3.1
 torchvision==0.18.1
 tqdm==4.66.4</code>
 
-### Download Testing Data
-The necessary independent testing data is available to download here: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
+### Download Testing Data for Evaluation
+The independent testing data required for evaluation can be downloaded from the following link: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
 |Name|ST_dataset.npy|ST_labels.csv|Y_dataset.npy|Y_labels.csv|
 |----|--------------|-------------|-------------|------------|
 |Size|6.07 GB|197 KB|1009 MB|32 KB|
 
-If you downloaded the entire 'data' folder, unzip the data folder into the same directory as the evaluation script inside the repository folder.
-> <kbd>**Note:**</kbd>
-> 1. Downloading the data in this way will cause only three of the four required files to be downloaded inside of a folder. 'ST_dataset.npy' is too large to be downloaded into a folder with the other files and must be added manually. You may unzip the downloaded folder with the three files to the previously described destination, then add 'ST_dataset.npy' to this folder.
-> 2. It is likely that this fourth large file will not be named exactly 'ST_dataset.npy'. Before running the evaluation script, please make sure that the data folder is named 'data' and that the files contained within are named exactly as the above table describes.
+#### Instructions for Data Setup:
 
-If you downloaded each file independently, add each file to a new folder titled 'data', and add this to the same directory as the evaluation script inside the repository folder.
-> <kbd>**Note:**</kbd>
-Before running the evaluation script, please make sure that the data folder is named 'data' and that the files contained within are named exactly as the above table describes.
+1. **Downloading the Complete Folder:**
+   - If you download the entire `data` folder, unzip it into the same directory where the evaluation script is located within the repository.
+   
+   > **Note:**
+   > - Due to its large size, the `ST_dataset.npy` file will not be included in the folder download. This file must be downloaded separately and manually placed in the `data` folder.
+   > - Ensure the `ST_dataset.npy` file is named exactly as listed (`ST_dataset.npy`). Once all files are in the `data` folder, verify that the names match the ones provided in the table above.
+
+2. **Downloading Files Individually:**
+   - If you choose to download the files individually, create a new folder named `data`, place all four files inside it, and then move this folder to the same directory as the evaluation script.
+
+   > **Important:**
+   > Before running the evaluation script, ensure that the folder is named `data` and that all files within it are named exactly as specified in the table above.
 
 ### Run Evaluation
 After the data folder is in place and the requirements are installed, evaluation can be performed with the format of the command below:
