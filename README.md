@@ -31,10 +31,10 @@
 The mapping from codon to amino acid is surjective due to the high degeneracy of the codon alphabet, suggesting that codon space might harbor higher information content. Embeddings from the codon language model have recently demonstrated success in various downstream tasks. However, predictive models for phosphorylation sites,arguably the most studied Post-Translational Modification (PTM), and PTM sites in general, have predominantly relied on amino acid-level representations. This work introduces a novel approach for the prediction of phosphorylation sites by incorporating codon-level information through embeddings from a recently developed codon language model trained on protein-coding DNA sequences. Protein sequences are first meticulously mapped to reliable coding sequences and encoded using this encoder to generate codon-aware embeddings. These embeddings are then integrated with amino acid-aware embeddings obtained from a protein language model through an early fusion strategy. Subsequently, a window-level representation of the site of interest, retaining full sequence context, is formed from the fused embeddings. A ConvBiGRU network extracts features capturing spatiotemporal correlations between proximal residues within the window, followed by a prediction head based on a Kolmogorov-Arnold Network (KAN) employing the Derivative of Gaussian (DoG) wavelet transform to produce the inference for the site.
 
 #### Codon-aware Embeddings
-The coding DNA sequences are encoded using a specialized codon-aware protein language model called CaLM (Codon adaptation Language Model) (22). Built on the Evolutionary Sequence Modelling (ESM) framework, CaLM utilizes an architecture comprising 12 encoder layers (each with 12 attention heads) and a prediction head, amounting to 86 million parameters in total. This model undergoes pretraining using a masked language modeling denoising objective on a dataset of approximately 9 million non-redundant coding sequences derived from whole-genome sequencing.
+The coding DNA sequences are encoded using a specialized codon-aware protein language model called CaLM (Codon adaptation Language Model). Built on the Evolutionary Sequence Modelling (ESM) framework, CaLM utilizes an architecture comprising 12 encoder layers (each with 12 attention heads) and a prediction head, amounting to 86 million parameters in total. This model undergoes pretraining using a masked language modeling denoising objective on a dataset of approximately 9 million non-redundant coding sequences derived from whole-genome sequencing.
 
 #### Amino Acid-aware Embeddings 
-Amino acid-aware embeddings are derived from a protein language model trained on a large corpus of protein sequences. In this work, we utilize a ProtTrans family model called ProtT5, a prominent pLM established for its high performance in various protein downstream tasks (5), including post-translational modification prediction (25; 24; 23). ProtT5 is built on the T5 (Text-to-Text Transfer Transformer) architecture and has been trained using an MLM denoising objective on the UniRef50 (UniProt Reference Clusters, encompassing 45 million protein sequences) database. The model comprises a 24-layer encoder-decoder architecture (each with 32 attention heads) and contains approximately 2.8 billion learnable parameters.
+Amino acid-aware embeddings are derived from a protein language model trained on a large corpus of protein sequences. In this work, we utilize a ProtTrans family model called ProtT5, a prominent pLM established for its high performance in various protein downstream tasks, including post-translational modification prediction. ProtT5 is built on the T5 (Text-to-Text Transfer Transformer) architecture and has been trained using an MLM denoising objective on the UniRef50 (UniProt Reference Clusters, encompassing 45 million protein sequences) database. The model comprises a 24-layer encoder-decoder architecture (each with 32 attention heads) and contains approximately 2.8 billion learnable parameters.
 
 #### Wavelet Kolmogorov-Arnold Network (Wav-KAN)
 Traditionally, prediction models have relied on multi-layer perceptrons (MLPs) for classification tasks. MLPs consist of multiple layers of neurons or nodes, which use fixed non-linear activation functions to learn complex relationships in the input data. Each neuron/node utilizes trainable weights to strengthen the connections that are most important for prediction.
@@ -42,6 +42,20 @@ Traditionally, prediction models have relied on multi-layer perceptrons (MLPs) f
 Kolmogorov–Arnold Networks (KANs) modify this approach by placing trainable, non-linear activation functions on the edges of the network, rather than at the nodes. The nodes themselves simply sum the inputs to produce an output. You can find the original paper proposing KANs here: Kolmogorov–Arnold Network Paper, along with the accompanying GitHub repository here: [pyKAN Github](https://github.com/KindXiaoming/pykan).
 
 Additionally, KANs can be enhanced by incorporating wavelet functions, which allow efficient capture of both low- and high-frequency components in the data. When wavelets are integrated into a KAN, the model's performance, efficiency, and robustness improve. You can find the detailed proposition of the Wavelet-KAN (Wav-KAN) in this paper: [Wavelet Kolmogorov-Arnold Network Paper](https://arxiv.org/abs/2405.12832) and the corresponding GitHub repository here: [Wav-KAN Github](https://github.com/zavareh1/Wav-KAN).
+
+## Authors
+
+- **Pawel Pratyush**, **Suresh Pokharel**, **Dukka B. KC**  
+  Golisano College of Computing and Information Sciences, Rochester Institute of Technology, Rochester, NY, United States
+
+- **Callen Carrier**, **Dukka B. KC**  
+  College of Computing, Michigan Technological University, Houghton, MI, United States
+
+- **Hamid D. Ismail**  
+  College of Engineering, North Carolina Agricultural and Technical State University, Greensboro, NC, United States
+
+- **Meenal Chaudhari**  
+  College of Applied Sciences and Technology, Illinois State University, Normal, IL, United States
 
 
 ## Architecture
