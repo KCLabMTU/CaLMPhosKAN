@@ -45,7 +45,7 @@ Additionally, KANs can be enhanced by incorporating wavelet functions, which all
 
 ## Authors
 
-Pawel Pratyush ,<sup>1</sup> Callen Carrier,<sup>2</sup> Suresh Pokharel ,<sup>1</sup> Hamid D. Ismail ,<sup>3</sup> Meenal Chaudhari<sup>4</sup> and Dukka B. KC<sup>1,∗</sup>  
+Pawel Pratyush <sup>1</sup>, Callen Carrier<sup>2</sup>, Suresh Pokharel <sup>1</sup>, Hamid D. Ismail <sup>3</sup>, Meenal Chaudhari<sup>4</sup>, and Dukka B. KC<sup>1,∗</sup>  
 
 <sup>1</sup>Golisano College of Computing and Information Sciences, Rochester Institute of Technology, Rochester, 14623, New York, United States,  
 <sup>2</sup>College of Computing, Michigan Technological University, Houghton, 49931, Michigan, United States,  
