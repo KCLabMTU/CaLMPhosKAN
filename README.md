@@ -104,7 +104,7 @@ After the data folder is in place and the requirements are installed, evaluation
 ```shell
 python evaluate.py <dataset>
 ```
-Note that <dataset> must be replaced by ST or Y, depending on which residue-specific model you want to run.
+Note that `<dataset>' must be replaced by ST or Y, depending on which residue-specific model you want to run.
 
 #### Output Examples
 The output of a successful execution should look very similar to the screenshots that follow. Directly below is the example of the evaluation script which executed on the ST dataset...
