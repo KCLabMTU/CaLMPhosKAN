@@ -28,8 +28,6 @@
 </p>
 
 ## About
-
-### Motivation
 The mapping from codon to amino acid is surjective due to the high degeneracy of the codon alphabet, suggesting that codon space might harbor higher information content. Embeddings from the codon language model have recently demonstrated success in various downstream tasks. However, predictive models for phosphorylation sites,arguably the most studied Post-Translational Modification (PTM), and PTM sites in general, have predominantly relied on amino acid-level representations. This work introduces a novel approach for the prediction of phosphorylation sites by incorporating codon-level information through embeddings from a recently developed codon language model trained on protein-coding DNA sequences. Protein sequences are first meticulously mapped to reliable coding sequences and encoded using this encoder to generate codon-aware embeddings. These embeddings are then integrated with amino acid-aware embeddings obtained from a protein language model through an early fusion strategy. Subsequently, a window-level representation of the site of interest, retaining full sequence context, is formed from the fused embeddings. A ConvBiGRU network extracts features capturing spatiotemporal correlations between proximal residues within the window, followed by a prediction head based on a Kolmogorov-Arnold Network (KAN) employing the Derivative of Gaussian (DoG) wavelet transform to produce the inference for the site.
 
 #### Codon-aware Embeddings
@@ -56,7 +54,7 @@ Additionally, KANs can be enhanced by incorporating wavelet functions, which all
 To start using this repository and obtain a local copy, you may clone it or download it directly from Github.
 
 ### Clone the Repository
-By using Git (must be installed on your computer), you can clone the repository directly from your terminal or command line. The command to do so is here:
+By using Git (must be installed on your local system), you can clone the repository directly from your terminal or command line. The command to do so is here:
 
 ```shell
 git clone git@github.com:KCLabMTU/CaLMPhosKAN.git
@@ -87,7 +85,7 @@ torchvision==0.18.1
 tqdm==4.66.4</code>
 
 ### Download Testing Data
-The necessary independent testing data is availiable to download here: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
+The necessary independent testing data is available to download here: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
 |Name|ST_dataset.npy|ST_labels.csv|Y_dataset.npy|Y_labels.csv|
 |----|--------------|-------------|-------------|------------|
 |Size|6.07 GB|197 KB|1009 MB|32 KB|
@@ -104,18 +102,18 @@ Before running the evaluation script, please make sure that the data folder is n
 ### Run Evaluation
 After the data folder is in place and the requirements are installed, evaluation can be performed with the format of the command below:
 ```shell
-python evaluate.py dataset
+python evaluate.py <dataset>
 ```
-Note that 'data' must be replaced by ST or Y, signaling to the program to predict phosphorylation on either the serine & threonine (ST) dataset, or the tyrosine (Y) dataset. 
+Note that <dataset> must be replaced by ST or Y, depending on which residue-specific model you want to run.
 
 #### Output Examples
-The output of a successful run should look very similar to the screenshots that follow. Directly below is the example of the evaluation script which ran on the ST dataset...
+The output of a successful execution should look very similar to the screenshots that follow. Directly below is the example of the evaluation script which executed on the ST dataset...
 
 <p align="center">
 <img src="images/example_output_ST.png"/> 
 </p>
 
-...and below this is the example of the evaluation script which ran on the Y dataset.
+...and below this is the example of the evaluation script which executed on the Y dataset.
 
 <p align="center">
 <img src="images/example_output_Y.png"/> 
