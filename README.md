@@ -128,11 +128,17 @@ The independent testing data required for evaluation can be downloaded from the 
    > Before running the evaluation script, ensure that the folder is named `data` and that all files within it are named exactly as specified in the table above.
 
 ### Run Evaluation
-After the data folder is in place and the requirements are installed, evaluation can be performed with the format of the command below:
+
+Once the `data` folder is correctly placed and all required dependencies are installed, you can run the evaluation using the following command format:
+
 ```shell
 python evaluate.py <dataset>
 ```
-Note that `<dataset>' must be replaced by ST or Y, depending on which residue-specific model you want to run.
+Replace `<dataset>` with either `ST` or `Y`, depending on which residue-specific model you want to evaluate. For example:
+
+- To evaluate the model for Serine/Threonine (ST), use: `python evaluate.py ST`
+- To evaluate the model for Tyrosine (Y), use: `python evaluate.py Y`
+
 
 #### Output Examples
 The output of a successful execution should look very similar to the screenshots that follow. Directly below is the example of the evaluation script which executed on the ST dataset...
@@ -146,3 +152,11 @@ The output of a successful execution should look very similar to the screenshots
 <p align="center">
 <img src="images/example_output_Y.png"/> 
 </p>
+
+## Contact  :mailbox: 
+Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
+
+- Main Contact: [dkcvcs@rit.edu](mailto:dkcvcs@rit.edu)
+- CC: [pp5291@rit.edu](mailto:pp5291@rit.edu)
+
+We look forward to addressing your queries and concerns.
