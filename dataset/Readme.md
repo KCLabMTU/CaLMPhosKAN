@@ -40,11 +40,8 @@
         </tr>
         <tr>
             <td>Total</td>
-            <td></td>
-            <td>181,297</td>
-            <td></td>
+            <td colspan="5" style="text-align: center;">181,297</td>
             <td>924,247</td>
-            <td></td>
             <td>5.09:1</td>
         </tr>
         <tr>
@@ -74,11 +71,8 @@
         </tr>
         <tr>
             <td>Total</td>
-            <td></td>
-            <td>20,018</td>
-            <td></td>
+            <td colspan="5" style="text-align: center;">20,018</td>
             <td>97,404</td>
-            <td></td>
             <td>4.90:1</td>
         </tr>
     </tbody>
