@@ -14,7 +14,7 @@
 
 ## Notes
 
-1. The number of sites is different from DeepPSP (https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00431) due to some proteins not being able to translate into reliable coding DNAs.
-2. The procedure of translating protein sequences to coding DNAs is shown in the diagram below.
+1. The number of sites differs from those reported in DeepPSP (https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00431) due to certain proteins not being translatable into reliable coding DNAs.
+2. The procedure for translating protein sequences into coding DNAs is illustrated in the diagram below.
 
 ![Translation Diagram](path/to/your/diagram.png)  <!-- Replace with the actual path to your diagram -->
