@@ -185,6 +185,6 @@ The output of a successful execution should look very similar to the screenshots
 Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
 
 - Main Contact: [dkcvcs@rit.edu](mailto:dkcvcs@rit.edu)
-- CC: [pp5291@rit.edu](mailto:pp5291@rit.edu)
+- CC: [chcarrie@mtu.edu](mailto:chcarrie@mtu.edu) ,[pp5291@rit.edu](mailto:pp5291@rit.edu)
 
 We look forward to addressing your queries and concerns.
