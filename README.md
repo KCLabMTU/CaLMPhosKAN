@@ -184,7 +184,7 @@ The output of a successful execution should look very similar to the screenshots
 ## Contact  :mailbox: 
 Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
 
-- Main Contact: [dkcvcs@rit.edu](mailto:dkcvcs@rit.edu)
-- CC: [chcarrie@mtu.edu](mailto:chcarrie@mtu.edu) ,[pp5291@rit.edu](mailto:pp5291@rit.edu)
+- Main Contact: [dkcvcs@rit.edu](mailto:dkcvcs@rit.edu) (Dr. Dukka KC)
+- CC: [chcarrie@mtu.edu](mailto:chcarrie@mtu.edu) (Callen Carrier) ,[pp5291@rit.edu](mailto:pp5291@rit.edu) (Pawel Pratyush)
 
 We look forward to addressing your queries and concerns.
