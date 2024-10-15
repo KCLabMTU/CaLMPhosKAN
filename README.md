@@ -75,7 +75,7 @@ The tool was developed in the following high performance computing environment, 
 To start using this repository and obtain a local copy, you may clone it or download it directly from Github. This repository contains the following directory structure:
 ```
 .
-├── dataset\\
+├── dataset
 │   ├── Readme.md
 │   ├── test_Serine+Threonine.csv
 │   ├── test_Tyrosine.csv
