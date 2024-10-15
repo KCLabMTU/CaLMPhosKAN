@@ -73,9 +73,9 @@ The tool was developed in the following high performance computing environment, 
 
 ## Use this Repository
 To start using this repository and obtain a local copy, you may clone it or download it directly from Github. This repository contains the following directory structure:
-
+```
 .
-├── dataset
+├── dataset\\
 │   ├── Readme.md
 │   ├── test_Serine+Threonine.csv
 │   ├── test_Tyrosine.csv
@@ -97,7 +97,7 @@ To start using this repository and obtain a local copy, you may clone it or down
 │   └── Y_model.pth
 ├── README.md
 └── requirements.txt
-
+```
 
 ### Clone the Repository
 To clone this repository using Git (which must be installed on your local system), follow these steps:
