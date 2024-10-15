@@ -1,4 +1,4 @@
-### Distribution of the training set (before balancing) and independent testing set respective to each target residues - Serine (S), Threonine (T), and Tyrosine (Y) residues.
+#### Distribution of the training set (before balancing) and independent testing set respective to each target residues - Serine (S), Threonine (T), and Tyrosine (Y) residues.
 
 | Set            | Target Residue | # Coding DNA/Protein | Coding DNA Length | P-sites (+ve) | NP-sites (-ve) | Ratio (NP:P) |
 |----------------|----------------|-----------------------|-------------------|----------------|-----------------|---------------|
@@ -10,3 +10,11 @@
 |                | Threonine (T)  | 1,246                 | 1808±1369         | 4,887          | 33,565          | 6.87:1       |
 |                | Tyrosine (Y)   | 902                   | 2062±1711         | 3,054          | 13,347          | 4.37:1       |
 |      |                |                |            **Total**        |      **20,018**    |          **97,404**        | **4.90:1**       |
+
+
+## Notes
+
+1. The number of sites is different from DeepPSP (https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00431) due to some proteins not being able to translate into reliable coding DNAs.
+2. The procedure of translating protein sequences to coding DNAs is shown in the diagram below.
+
+![Translation Diagram](path/to/your/diagram.png)  <!-- Replace with the actual path to your diagram -->
