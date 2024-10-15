@@ -145,7 +145,7 @@ torchvision==0.18.1
 tqdm==4.66.4</code>
 
 ### Download Testing Data for Evaluation
-The independent testing data (features+labels) required for evaluation can be downloaded from the following link: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
+The independent testing data (***features+labels***) required for evaluation can be downloaded from the following link: [CaLMPhosKAN Independent Test Data](https://drive.google.com/drive/folders/16GBz_CJCvvUyhspVAw4Qi6upQRqGRciS?usp=drive_link). This is a folder which consists of these four files:
 |Name|ST_dataset.npy|ST_labels.csv|Y_dataset.npy|Y_labels.csv|
 |----|--------------|-------------|-------------|------------|
 |Size|6.07 GB|197 KB|1009 MB|32 KB|
