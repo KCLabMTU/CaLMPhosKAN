@@ -1,4 +1,4 @@
-#### Distribution of the training set (before balancing) and independent testing set respective to each target residues - Serine (S), Threonine (T), and Tyrosine (Y) residues.
+#### Distribution of the training set and independent testing set respective to each target residues - Serine (S), Threonine (T), and Tyrosine (Y) residues.
 
 | Set            | Target Residue | # Coding DNA/Protein | Coding DNA Length | P-sites (+ve) | NP-sites (-ve) | Ratio (NP:P) |
 |----------------|----------------|-----------------------|-------------------|----------------|-----------------|---------------|
