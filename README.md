@@ -64,7 +64,7 @@ We acknowledge helpful discussions with Dr. Carlos Outeiral (University of Oxfor
 </p>
 
 ## Build Environment 💻
-The tool was developed in the following high performance computing environment, ensuring robust and efficient functionality:
+The tool was developed in the following high-performance computing environment:
 - **RAM:** 384 GB
 - **Processor:** Intel Xeon(R) Silver 4216 CPU @ 2.10 GHz (32 cores)
 - **GPU:** NVIDIA Tesla A100 Ampere 80 GB HBM2 (6912 CUDA cores, 432 Tensor cores and bandwidth 1555GB/sec)
@@ -210,6 +210,6 @@ The output of a successful execution should look very similar to the screenshots
 Should you have any inquiries related to this project, please feel free to reach out via email. Kindly CC all of the following recipients in your communication for a swift response:
 
 - Main Contact: [dkcvcs@rit.edu](mailto:dkcvcs@rit.edu) (Dr. Dukka KC)
-- CC: [chcarrie@mtu.edu](mailto:chcarrie@mtu.edu) (Callen Carrier) ,[pp5291@rit.edu](mailto:pp5291@rit.edu) (Pawel Pratyush)
+- CC: [chcarrie@mtu.edu](mailto:chcarrie@mtu.edu) (Callen Carrier), [pp5291@rit.edu](mailto:pp5291@rit.edu) (Pawel Pratyush)
 
 We look forward to addressing your queries and concerns.
