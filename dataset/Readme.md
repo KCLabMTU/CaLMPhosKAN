@@ -16,6 +16,7 @@
 
 1. The number of sites in both train and test differs from those reported in DeepPSP (https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00431) due to certain proteins not being translatable into reliable coding DNAs.
 2. Dataset Sources:
+3. 
    Primary: https://pubs.acs.org/doi/10.1021/acs.jproteome.0c00431
    
    A549: https://academic.oup.com/bib/article/22/6/bbab244/6310410
