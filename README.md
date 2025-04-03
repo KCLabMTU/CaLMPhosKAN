@@ -79,8 +79,6 @@ To start using this repository and obtain a local copy, you may clone it or down
 │   ├── Readme.md
 │   ├── test_Serine+Threonine.csv
 │   ├── test_Tyrosine.csv
-│   ├── train_Serine+Threonine.csv
-│   └── train_Tyrosine.csv
 ├── evaluate.py
 ├── images
 │   ├── Calmphoskan_architecture.png
